@@ -513,8 +513,16 @@ local RblxDataTypesChanger = {
 					decompiled = `-- Decompiled time: {decompileTime}s\n-- Decompiled by {identifyexecutor()}\n\n`
 						.. decompiled
 
-					if Settings.decompile == true then
+					if decompiled == "" then
+						decompiled = "[ Failed to decompile script ]"
+					end
+
+					if Settings.decompile then
 						decompiled = ""
+					end
+
+					if instance:IsA("Script") then
+						decompiled = "-- [ Failed to decompile ]: Script contained no byte code"
 					end
 
 					return `<![CDATA[{decompiled}]]>`, "ProtectedString"
@@ -819,7 +827,7 @@ function XMLUtils.init(InputSettings)
 	local Note = Settings.Note or ""
 	local NoteName = Settings.NoteName or "Note [DELETE ME]"
 
-	Note = `--[[ Saved by Uken's InstanceSaver [Private]\n{string.rep("=", 25)}\n` .. Note .. " ]]"
+	Note = `--[[ Saved by Uken's InstanceSaver [Private]\n{string.rep("=", 25)}\n` .. Note .. "\n]]"
 
 	ItemReferent = 0
 	InstanceReferents = {}
