@@ -272,7 +272,6 @@ local RblxProperties = {
 	"WorldPivot",
 	"Scale",
 	"ModelStreamingMode",
-	"CurrentAngle",
 	"DesiredAngle",
 	"MaxVelocity",
 
