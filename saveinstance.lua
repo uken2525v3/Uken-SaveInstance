@@ -510,8 +510,12 @@ local RblxDataTypesChanger = {
 					local decompiled = decompile(instance)
 					local decompileTime = tick() - startD
 
-					decompiled = `-- Decompiled time {decompileTime}\n-- Decompiled by {identifyexecutor()}\n\n`
+					decompiled = `-- Decompiled time: {decompileTime}s\n-- Decompiled by {identifyexecutor()}\n\n`
 						.. decompiled
+
+					if Settings.decompile == true then
+						decompiled = ""
+					end
 
 					return `<![CDATA[{decompiled}]]>`, "ProtectedString"
 				end
