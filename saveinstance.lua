@@ -19,6 +19,8 @@ local TextService = game:GetService("TextService")
 local VRService = game:GetService("VRService")
 local VoiceChatService = game:GetService("VoiceChatService")
 
+local Settings = {}
+
 local SavingServices = {
 	workspace,
 	Players,
@@ -799,8 +801,8 @@ function XMLUtils.createTemplate(parts: {})
 	return XMLUtils.newStructure("roblox", { version = 4 }, child)
 end
 
-function XMLUtils.init(Settings)
-	Settings = Settings or {}
+function XMLUtils.init(InputSettings)
+	Settings = InputSettings
 	print("Saving...")
 	local GameInfo = MarketplaceService:GetProductInfoAsync(game.PlaceId, Enum.InfoType.Asset)
 
