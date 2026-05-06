@@ -800,6 +800,7 @@ function XMLUtils.createTemplate(parts: {})
 end
 
 function XMLUtils.init(Settings)
+	Settings = Settings or {}
 	print("Saving...")
 	local GameInfo = MarketplaceService:GetProductInfoAsync(game.PlaceId, Enum.InfoType.Asset)
 
