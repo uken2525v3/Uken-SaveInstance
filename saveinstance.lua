@@ -369,6 +369,12 @@ local RblxProperties = {
 	"Damping",
 	"FreeLength",
 
+	"BaseTextureContent",
+	"BaseTextureId",
+	"BodyPart",
+	"OverlayTextureContent",
+	"OverlayTextureId",
+
 	--// Terrain LETS GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 	"SmoothGrid",
 
