@@ -1,3 +1,12 @@
+--[[ 
+
+⚠️ READ BEFORE YOU'RE USING THIS ⚠️
+
+THIS WAS MADE FOR EDUCATIONAL PURPOSE ONLY ON REFVERSE ENGINEERING ROBLOX XML TREE
+SO I MADE THIS OPEN SOURCE
+
+]]--
+
 local Chat = game:GetService("Chat")
 local CollectionService = game:GetService("CollectionService")
 local Lighting = game:GetService("Lighting")
