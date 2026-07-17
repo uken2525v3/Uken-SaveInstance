@@ -1,6 +1,6 @@
 # Roblox XML Technical Education Project
 
-**EDUCATIONAL PURPOSE ONLY**
+**( EDUCATIONAL PURPOSE ONLY )**
 
 This project is made open source for education on how Roblox XML works.
 And this script is NOT made for copy and publish the asset.
