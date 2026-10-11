@@ -3,7 +3,14 @@ local options = {}
 
 -[[
 
-See documentation in : W.I.P Link
+Quick start: 
+
+local options = {
+  decompile: true | false - Select to compile the script or not.
+  Object: Instance - Your target to save example game, game.Car.
+  NoteName: string - Name of the note file. The note file came out as script so naming it will be a good thing.
+  Note: string - You can put anything here. The message will appears in a note file.
+}
 
 ]]
 
